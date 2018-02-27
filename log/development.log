@@ -10,3 +10,238 @@ Started GET "/" for 193.48.246.14 at 2018-02-24 05:21:44 -0500
 Processing by Rails::WelcomeController#index as HTML
   Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/railties-4.1.6/lib/rails/templates/rails/welcome/index.html.erb (1.1ms)
 Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 05:24:13 -0500
+Processing by Rails::WelcomeController#index as */*
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/railties-4.2.7.1/lib/rails/templates/rails/welcome/index.html.erb (2.1ms)
+Completed 200 OK in 27ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 05:24:32 -0500
+Processing by Rails::WelcomeController#index as */*
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/railties-4.2.7.1/lib/rails/templates/rails/welcome/index.html.erb (2.9ms)
+Completed 200 OK in 28ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 05:24:32 -0500
+Processing by Rails::WelcomeController#index as */*
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/railties-4.2.7.1/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 193.48.246.14 at 2018-02-27 05:24:32 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/railties-4.2.7.1/lib/rails/templates/rails/welcome/index.html.erb (1.2ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 05:28:23 -0500
+Processing by Rails::WelcomeController#index as */*
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/railties-4.2.7.1/lib/rails/templates/rails/welcome/index.html.erb (2.3ms)
+Completed 200 OK in 27ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 05:28:23 -0500
+Processing by Rails::WelcomeController#index as */*
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/railties-4.2.7.1/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 193.48.246.14 at 2018-02-27 05:28:24 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/railties-4.2.7.1/lib/rails/templates/rails/welcome/index.html.erb (1.0ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 05:30:45 -0500
+Processing by Rails::WelcomeController#index as */*
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/railties-4.2.7.1/lib/rails/templates/rails/welcome/index.html.erb (3.5ms)
+Completed 200 OK in 30ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 05:30:46 -0500
+Processing by Rails::WelcomeController#index as */*
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/railties-4.2.7.1/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 193.48.246.14 at 2018-02-27 05:30:46 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/railties-4.2.7.1/lib/rails/templates/rails/welcome/index.html.erb (1.1ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: Defining a route where `to` is a controller without an action is deprecated. Please change `to: 'welcome/index'` to `controller: 'welcome/index'`. (called from block in <top (required)> at /home/cabox/workspace/config/routes.rb:2)
+DEPRECATION WARNING: Defining a route where `to` is a controller without an action is deprecated. Please change `to: 'welcome/index'` to `controller: 'welcome/index'`. (called from block in <top (required)> at /home/cabox/workspace/config/routes.rb:2)
+DEPRECATION WARNING: Defining a route where `to` is a controller without an action is deprecated. Please change `to: 'welcome/index'` to `controller: 'welcome/index'`. (called from block in <top (required)> at /home/cabox/workspace/config/routes.rb:2)
+DEPRECATION WARNING: Defining a route where `to` is a controller without an action is deprecated. Please change `to: 'welcome/index'` to `controller: 'welcome/index'`. (called from block in <top (required)> at /home/cabox/workspace/config/routes.rb:2)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 05:34:40 -0500
+Processing by WelcomeController#index as */*
+  Rendered welcome/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 991ms (Views: 978.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 05:34:41 -0500
+Processing by WelcomeController#index as */*
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 63ms (Views: 62.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 05:34:41 -0500
+Processing by WelcomeController#index as */*
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 96ms (Views: 95.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 193.48.246.14 at 2018-02-27 05:34:42 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 64ms (Views: 63.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 193.48.246.14 at 2018-02-27 05:34:42 -0500
+
+
+Started GET "/assets/application.css?body=1" for 193.48.246.14 at 2018-02-27 05:34:42 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 193.48.246.14 at 2018-02-27 05:34:42 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 193.48.246.14 at 2018-02-27 05:34:42 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 193.48.246.14 at 2018-02-27 05:34:42 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 193.48.246.14 at 2018-02-27 05:34:42 -0500
+
+
+Started GET "/assets/application.js?body=1" for 193.48.246.14 at 2018-02-27 05:34:42 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 05:35:39 -0500
+Processing by WelcomeController#index as */*
+  Rendered welcome/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 155ms (Views: 142.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 05:35:40 -0500
+Processing by WelcomeController#index as */*
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 85ms (Views: 83.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 193.48.246.14 at 2018-02-27 05:35:40 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 71ms (Views: 68.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 193.48.246.14 at 2018-02-27 05:35:40 -0500
+
+
+Started GET "/assets/application.css?body=1" for 193.48.246.14 at 2018-02-27 05:35:40 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 193.48.246.14 at 2018-02-27 05:35:40 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 05:36:26 -0500
+Processing by WelcomeController#index as */*
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 116ms (Views: 104.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 05:36:27 -0500
+Processing by WelcomeController#index as */*
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 65ms (Views: 64.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 193.48.246.14 at 2018-02-27 05:36:27 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 61ms (Views: 59.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 193.48.246.14 at 2018-02-27 05:36:27 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 193.48.246.14 at 2018-02-27 05:36:27 -0500
+
+
+Started GET "/assets/application.css?body=1" for 193.48.246.14 at 2018-02-27 05:36:27 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 193.48.246.14 at 2018-02-27 05:36:27 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 193.48.246.14 at 2018-02-27 05:36:27 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 05:37:00 -0500
+Processing by WelcomeController#index as */*
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 129ms (Views: 116.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 05:37:01 -0500
+Processing by WelcomeController#index as */*
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 82ms (Views: 81.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 193.48.246.14 at 2018-02-27 05:37:01 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 67ms (Views: 65.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 193.48.246.14 at 2018-02-27 05:37:01 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 193.48.246.14 at 2018-02-27 05:37:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 193.48.246.14 at 2018-02-27 05:37:01 -0500
+
+
+Started GET "/assets/application.css?body=1" for 193.48.246.14 at 2018-02-27 05:37:01 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 193.48.246.14 at 2018-02-27 05:37:01 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 05:37:28 -0500
+Processing by WelcomeController#index as */*
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 121ms (Views: 108.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 05:37:29 -0500
+Processing by WelcomeController#index as */*
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 60ms (Views: 59.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 193.48.246.14 at 2018-02-27 05:37:29 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 61ms (Views: 60.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 193.48.246.14 at 2018-02-27 05:37:29 -0500
+
+
+Started GET "/assets/application.css?body=1" for 193.48.246.14 at 2018-02-27 05:37:29 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 193.48.246.14 at 2018-02-27 05:37:29 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 193.48.246.14 at 2018-02-27 05:37:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 193.48.246.14 at 2018-02-27 05:37:29 -0500
