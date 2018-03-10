@@ -2,12 +2,7 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: 5
-  timeout: 30
-  host: 
-  username: 
-  password: 
-  port: 5432
-  database: 
+  timeout: 30 
 
 development:
   <<: *default
