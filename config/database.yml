@@ -3,11 +3,11 @@ default: &default
   encoding: unicode
   pool: 5
   timeout: 30
-  host: ec2-54-228-181-43.eu-west-1.compute.amazonaws.com
-  username: uwrrkqybwqjpmd
-  password: 7e91eb5855fda4f0f1e5eb0708be40fd77efec9767e758c0ff933851ffd91cab
+  host: 
+  username: 
+  password: 
   port: 5432
-  database: da8oj4c0e45bbf
+  database: 
 
 development:
   <<: *default
