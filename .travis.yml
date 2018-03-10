@@ -1,3 +1,10 @@
 language: ruby
 rvm:
 - 2.3.5
+deploy:
+  provider: heroku
+  api_key:
+    secure: JdmeEwqSLVvbdR/SYmlyLOWGFegCl2gKXtOPWDhXtxOnylUuja27AAkq1uZZTix3FM8A+inWsn/G4+n/2p81zCICyNVzRjg6F63PWOlkCLc8HS619BvRWOQUTkkxS3aPtglHElnNdrVEbU7HFaLnKsFL4Ttnzx9I7DanF+vvy5jVr1VOhWrpwkVZKpNme2CweHklvOlLRc5bFQYe2HnMUKSdeKv3KrOiTb1NqDGDHgkmGvnEoeW8b+aPNguwxw+n7Dsl6AE+flq+kvvA0s+qtOKq/lutlLiq7Ea0B8Ds6ClluTWrEfxV9XHVysUdBukNa1VqDDHUT067WiB2gUcYjQUTcw53pCl4SPSrg/pjfV3L5ErkeIllXqgHScBIDlQDVqZqB+UqYYs3Y0akmBvKRgZJAi7nj37C9P/eAGPsHC5cLD36hR1cnMjJX9+T+cHjZjlaDGYbaDElJDlovWuUIoxJ6ac4mqrv4q92SvQDAK53LKKtC9i56BxzihOjau4eyuZfo5uf6gaGUYoZoNCsS6Go7/eqhk1K4xhG/C1fSZhBKxzaiKS/fGTGKcOTB+bH9bkM03s6oZa8MAJfY43EQOoRuLIFhYwCIkX5GR7W1Q7an5xkTHE7cAnERHzdOLVVtR0ZQygm7219qn2sOE16fDu+BLR3bYwW6bmXc0FLS8c=
+  app: projet-1
+  before_script:
+  - heroku run db:migrate
