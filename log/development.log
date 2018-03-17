@@ -1452,3 +1452,813 @@ Processing by TownsController#index as HTML
   [1m[35mTown Load (0.3ms)[0m  SELECT "towns".* FROM "towns"
   Rendered towns/index.html.erb within layouts/application (1.8ms)
 Completed 200 OK in 76ms (Views: 74.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/towns" for 193.48.242.161 at 2018-03-17 04:39:45 -0400
+Processing by TownsController#index as HTML
+  [1m[36mTown Load (0.3ms)[0m  [1mSELECT "towns".* FROM "towns"[0m
+  Rendered towns/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 104ms (Views: 102.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 193.48.242.161 at 2018-03-17 04:39:45 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 193.48.242.161 at 2018-03-17 04:39:45 -0400
+
+
+Started GET "/assets/towns.css?body=1" for 193.48.242.161 at 2018-03-17 04:39:45 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 193.48.242.161 at 2018-03-17 04:39:45 -0400
+
+
+Started GET "/assets/students.css?body=1" for 193.48.242.161 at 2018-03-17 04:39:45 -0400
+
+
+Started GET "/assets/application.css?body=1" for 193.48.242.161 at 2018-03-17 04:39:45 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 193.48.242.161 at 2018-03-17 04:39:45 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 193.48.242.161 at 2018-03-17 04:39:45 -0400
+
+
+Started GET "/assets/towns.js?body=1" for 193.48.242.161 at 2018-03-17 04:39:45 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 193.48.242.161 at 2018-03-17 04:39:45 -0400
+
+
+Started GET "/assets/students.js?body=1" for 193.48.242.161 at 2018-03-17 04:39:45 -0400
+
+
+Started GET "/assets/application.js?body=1" for 193.48.242.161 at 2018-03-17 04:39:45 -0400
+
+
+Started GET "/towns/new" for 193.48.242.161 at 2018-03-17 04:47:22 -0400
+Processing by TownsController#new as HTML
+  Rendered towns/_form.html.erb (3.8ms)
+  Rendered towns/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 102ms (Views: 100.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/towns" for 193.48.242.161 at 2018-03-17 04:47:30 -0400
+Processing by TownsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oTtevGHyIo3JnorUVg4bauSDckdGqWAGPbBnOzmD7Sl2RPyIUyP2HPk3ioPjM2J3mop9NesJsveGiEH31rZpng==", "town"=>{"name"=>"Lille", "zipcode"=>"59000", "latitude"=>"", "longitude"=>""}, "commit"=>"Create Town"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "towns" ("name", "zipcode", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Lille"], ["zipcode", 59000], ["created_at", "2018-03-17 08:47:30.594364"], ["updated_at", "2018-03-17 08:47:30.594364"]]
+  [1m[35m (24.1ms)[0m  commit transaction
+Redirected to http://port-3000.projet-corentindieval667230.codeanyapp.com/towns/2
+Completed 302 Found in 31ms (ActiveRecord: 24.6ms)
+
+
+Started GET "/towns/2" for 193.48.242.161 at 2018-03-17 04:47:30 -0400
+Processing by TownsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTown Load (0.2ms)[0m  [1mSELECT  "towns".* FROM "towns" WHERE "towns"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered towns/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 96ms (Views: 95.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 193.48.242.161 at 2018-03-17 04:47:31 -0400
+
+
+Started GET "/assets/application.css?body=1" for 193.48.242.161 at 2018-03-17 04:47:31 -0400
+
+
+Started GET "/assets/students.css?body=1" for 193.48.242.161 at 2018-03-17 04:47:31 -0400
+
+
+Started GET "/assets/towns.css?body=1" for 193.48.242.161 at 2018-03-17 04:47:31 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 193.48.242.161 at 2018-03-17 04:47:31 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 193.48.242.161 at 2018-03-17 04:47:31 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 193.48.242.161 at 2018-03-17 04:47:31 -0400
+
+
+Started GET "/assets/students.js?body=1" for 193.48.242.161 at 2018-03-17 04:47:31 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 193.48.242.161 at 2018-03-17 04:47:31 -0400
+
+
+Started GET "/assets/towns.js?body=1" for 193.48.242.161 at 2018-03-17 04:47:31 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 193.48.242.161 at 2018-03-17 04:47:31 -0400
+
+
+Started GET "/assets/application.js?body=1" for 193.48.242.161 at 2018-03-17 04:47:31 -0400
+
+
+Started GET "/towns" for 193.48.242.161 at 2018-03-17 04:47:33 -0400
+Processing by TownsController#index as HTML
+  [1m[35mTown Load (0.3ms)[0m  SELECT "towns".* FROM "towns"
+  Rendered towns/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 93ms (Views: 91.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/towns/new" for 193.48.242.161 at 2018-03-17 04:48:42 -0400
+Processing by TownsController#new as HTML
+  Rendered towns/_form.html.erb (3.7ms)
+  Rendered towns/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 86ms (Views: 84.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/towns/new" for 193.48.242.161 at 2018-03-17 06:06:49 -0400
+Processing by TownsController#new as HTML
+  Rendered towns/_form.html.erb (71.5ms)
+  Rendered towns/new.html.erb within layouts/application (81.0ms)
+Completed 200 OK in 1143ms (Views: 1024.6ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/students.css?body=1" for 193.48.242.161 at 2018-03-17 06:06:52 -0400
+
+
+Started GET "/assets/application.css?body=1" for 193.48.242.161 at 2018-03-17 06:06:52 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 193.48.242.161 at 2018-03-17 06:06:52 -0400
+
+
+Started GET "/assets/towns.css?body=1" for 193.48.242.161 at 2018-03-17 06:06:52 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 193.48.242.161 at 2018-03-17 06:06:52 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 193.48.242.161 at 2018-03-17 06:06:52 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 193.48.242.161 at 2018-03-17 06:06:52 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 193.48.242.161 at 2018-03-17 06:06:52 -0400
+
+
+Started GET "/assets/towns.js?body=1" for 193.48.242.161 at 2018-03-17 06:06:52 -0400
+
+
+Started GET "/assets/students.js?body=1" for 193.48.242.161 at 2018-03-17 06:06:52 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 193.48.242.161 at 2018-03-17 06:06:52 -0400
+
+
+Started GET "/assets/application.js?body=1" for 193.48.242.161 at 2018-03-17 06:06:52 -0400
+
+
+Started POST "/towns" for 193.48.242.161 at 2018-03-17 06:07:04 -0400
+Processing by TownsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Bxi4wk8gnsRRVbJnfvYGMlUUogx70M86DiBKw3R0NUDQZxr2ffFKVWH8sjDLy38vKx2tftZwHcu1GGwPm0Gx9w==", "town"=>{"name"=>"Belfort", "zipcode"=>""}, "commit"=>"Create Town"}
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.7ms)
+
+NameError (uninitialized constant Town::Nominatim):
+  app/models/town.rb:8:in `set_geocode'
+  app/controllers/towns_controller.rb:30:in `block in create'
+  app/controllers/towns_controller.rb:29:in `create'
+
+
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.8ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.4ms)
+
+
+Started POST "/towns" for 193.48.242.161 at 2018-03-17 06:07:16 -0400
+Processing by TownsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Bxi4wk8gnsRRVbJnfvYGMlUUogx70M86DiBKw3R0NUDQZxr2ffFKVWH8sjDLy38vKx2tftZwHcu1GGwPm0Gx9w==", "town"=>{"name"=>"Belfort", "zipcode"=>"90000"}, "commit"=>"Create Town"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms)
+
+NameError (uninitialized constant Town::Nominatim):
+  app/models/town.rb:8:in `set_geocode'
+  app/controllers/towns_controller.rb:30:in `block in create'
+  app/controllers/towns_controller.rb:29:in `create'
+
+
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.2ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (38.3ms)
+
+
+Started GET "/towns" for 193.48.242.161 at 2018-03-17 06:08:43 -0400
+Processing by TownsController#index as HTML
+  [1m[36mTown Load (0.3ms)[0m  [1mSELECT "towns".* FROM "towns"[0m
+  Rendered towns/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 218ms (Views: 214.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 193.48.242.161 at 2018-03-17 06:08:47 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 93ms (Views: 92.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 193.48.242.161 at 2018-03-17 06:08:47 -0400
+
+
+Started GET "/assets/towns.css?body=1" for 193.48.242.161 at 2018-03-17 06:08:47 -0400
+
+
+Started GET "/assets/students.css?body=1" for 193.48.242.161 at 2018-03-17 06:08:47 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 193.48.242.161 at 2018-03-17 06:08:47 -0400
+
+
+Started GET "/assets/application.css?body=1" for 193.48.242.161 at 2018-03-17 06:08:47 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 193.48.242.161 at 2018-03-17 06:08:47 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 193.48.242.161 at 2018-03-17 06:08:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 193.48.242.161 at 2018-03-17 06:08:48 -0400
+
+
+Started GET "/assets/students.js?body=1" for 193.48.242.161 at 2018-03-17 06:08:48 -0400
+
+
+Started GET "/assets/towns.js?body=1" for 193.48.242.161 at 2018-03-17 06:08:48 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 193.48.242.161 at 2018-03-17 06:08:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 193.48.242.161 at 2018-03-17 06:08:48 -0400
+
+
+Started GET "/towns" for 193.48.242.161 at 2018-03-17 06:08:52 -0400
+Processing by TownsController#index as HTML
+  [1m[35mTown Load (0.2ms)[0m  SELECT "towns".* FROM "towns"
+  Rendered towns/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 83ms (Views: 82.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/towns/new" for 193.48.242.161 at 2018-03-17 06:09:04 -0400
+Processing by TownsController#new as HTML
+  Rendered towns/_form.html.erb (3.0ms)
+  Rendered towns/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 119ms (Views: 117.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/towns" for 193.48.242.161 at 2018-03-17 06:09:09 -0400
+Processing by TownsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hQefQyxsYULiWM4SzTud8YjA8E0zi3IBYUZtBVvK+gxSeD13Hr2109LxzkV4BuTs9sn/P54roPDafkvJtP9+uw==", "town"=>{"name"=>"Arras", "zipcode"=>"62000"}, "commit"=>"Create Town"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms)
+
+NameError (uninitialized constant Town::Nominatim):
+  app/models/town.rb:8:in `set_geocode'
+  app/controllers/towns_controller.rb:30:in `block in create'
+  app/controllers/towns_controller.rb:29:in `create'
+
+
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.3ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.8ms)
+
+
+Started POST "/towns" for 193.48.242.161 at 2018-03-17 06:14:25 -0400
+Processing by TownsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UX5/N2jXQHDppBoiOTIM9FsF/Ux427+XUPMJRYJne3iGAd0DWgaU4dkNGnWMD3XpJQzyPtV7bWbryy+JbVL/zw==", "town"=>{"name"=>"Arras", "zipcode"=>"62000"}, "commit"=>"Create Town"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms)
+
+NameError (uninitialized constant Town::Nominatim):
+  app/models/town.rb:8:in `set_geocode'
+  app/controllers/towns_controller.rb:30:in `block in create'
+  app/controllers/towns_controller.rb:29:in `create'
+
+
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.6ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.6ms)
+
+
+Started GET "/" for 193.48.242.161 at 2018-03-17 06:14:49 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 89ms (Views: 88.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 193.48.242.161 at 2018-03-17 06:14:50 -0400
+
+
+Started GET "/assets/students.css?body=1" for 193.48.242.161 at 2018-03-17 06:14:50 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 193.48.242.161 at 2018-03-17 06:14:50 -0400
+
+
+Started GET "/assets/towns.css?body=1" for 193.48.242.161 at 2018-03-17 06:14:50 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 193.48.242.161 at 2018-03-17 06:14:50 -0400
+
+
+Started GET "/assets/application.css?body=1" for 193.48.242.161 at 2018-03-17 06:14:50 -0400
+
+
+Started GET "/assets/towns.js?body=1" for 193.48.242.161 at 2018-03-17 06:14:50 -0400
+
+
+Started GET "/assets/students.js?body=1" for 193.48.242.161 at 2018-03-17 06:14:50 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 193.48.242.161 at 2018-03-17 06:14:50 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 193.48.242.161 at 2018-03-17 06:14:50 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 193.48.242.161 at 2018-03-17 06:14:50 -0400
+
+
+Started GET "/assets/application.js?body=1" for 193.48.242.161 at 2018-03-17 06:14:50 -0400
+
+
+Started GET "/towns" for 193.48.242.161 at 2018-03-17 06:14:52 -0400
+Processing by TownsController#index as HTML
+  [1m[36mTown Load (0.3ms)[0m  [1mSELECT "towns".* FROM "towns"[0m
+  Rendered towns/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 97ms (Views: 95.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/towns/2/edit" for 193.48.242.161 at 2018-03-17 06:14:55 -0400
+Processing by TownsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTown Load (0.3ms)[0m  SELECT  "towns".* FROM "towns" WHERE "towns"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered towns/_form.html.erb (4.2ms)
+  Rendered towns/edit.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 103ms (Views: 97.8ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/towns/2" for 193.48.242.161 at 2018-03-17 06:14:57 -0400
+Processing by TownsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XvonL7RSwXoM3mHz1yhVoR03E77JxagoN5RILLcqgziJhYUbhoMV6zx3YaRiFSy8Yz4czGRletmMrG7gWB8Hjw==", "town"=>{"name"=>"Lille", "zipcode"=>"59000"}, "commit"=>"Update Town", "id"=>"2"}
+  [1m[36mTown Load (0.2ms)[0m  [1mSELECT  "towns".* FROM "towns" WHERE "towns"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.5ms)
+
+NameError (uninitialized constant Town::Nominatim):
+  app/models/town.rb:8:in `set_geocode'
+  app/controllers/towns_controller.rb:44:in `block in update'
+  app/controllers/towns_controller.rb:43:in `update'
+
+
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.1ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.7ms)
+
+
+Started GET "/towns" for 193.48.242.161 at 2018-03-17 06:15:00 -0400
+Processing by TownsController#index as HTML
+  [1m[35mTown Load (0.3ms)[0m  SELECT "towns".* FROM "towns"
+  Rendered towns/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 124ms (Views: 122.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/towns/new" for 193.48.242.161 at 2018-03-17 06:15:01 -0400
+Processing by TownsController#new as HTML
+  Rendered towns/_form.html.erb (2.3ms)
+  Rendered towns/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 97ms (Views: 95.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/towns" for 193.48.242.161 at 2018-03-17 06:15:11 -0400
+Processing by TownsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iVOFSMUK28FgWrZJGJZoTOCIrFdd9u7EU/HK9aEjnBNeLCd899sPUFDzth6tqxFRnoGjJfBWPDXoyew5ThYYpA==", "town"=>{"name"=>"Lens", "zipcode"=>"5857"}, "commit"=>"Create Town"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+NameError (uninitialized constant Town::Nominatim):
+  app/models/town.rb:8:in `set_geocode'
+  app/controllers/towns_controller.rb:30:in `block in create'
+  app/controllers/towns_controller.rb:29:in `create'
+
+
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.5ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-17 06:15:45 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as */*
+  Rendered welcome/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 365ms (Views: 349.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-17 06:15:46 -0400
+Processing by WelcomeController#index as */*
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 109ms (Views: 108.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 193.48.242.161 at 2018-03-17 06:16:01 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 93ms (Views: 92.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/students.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:01 -0400
+
+
+Started GET "/assets/towns.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:01 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:01 -0400
+
+
+Started GET "/assets/application.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:01 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:01 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:01 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:01 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:01 -0400
+
+
+Started GET "/assets/students.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:01 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:01 -0400
+
+
+Started GET "/assets/towns.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:01 -0400
+
+
+Started GET "/assets/application.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:01 -0400
+
+
+Started GET "/towns" for 193.48.242.161 at 2018-03-17 06:16:03 -0400
+Processing by TownsController#index as HTML
+  [1m[35mTown Load (0.3ms)[0m  SELECT "towns".* FROM "towns"
+  Rendered towns/index.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 154ms (Views: 149.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/towns/new" for 193.48.242.161 at 2018-03-17 06:16:05 -0400
+Processing by TownsController#new as HTML
+  Rendered towns/_form.html.erb (45.4ms)
+  Rendered towns/new.html.erb within layouts/application (53.0ms)
+Completed 200 OK in 164ms (Views: 163.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/towns" for 193.48.242.161 at 2018-03-17 06:16:09 -0400
+Processing by TownsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RAbsWc78qj5UTZob7tj+rN7P/RFch8Xx3e/8BvaoXDGTeU5t/C1+r2Tkmkxb5YexoMbyY/EnFwBm19rKGZ3Yhg==", "town"=>{"name"=>"Lens 62594", "zipcode"=>""}, "commit"=>"Create Town"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered towns/_form.html.erb (4.9ms)
+  Rendered towns/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 279ms (Views: 90.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:10 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:10 -0400
+
+
+Started GET "/assets/students.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:10 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:10 -0400
+
+
+Started GET "/assets/towns.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:10 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:10 -0400
+
+
+Started GET "/assets/students.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:10 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:10 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:10 -0400
+
+
+Started GET "/assets/application.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:10 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:10 -0400
+
+
+Started GET "/assets/towns.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:10 -0400
+
+
+Started POST "/towns" for 193.48.242.161 at 2018-03-17 06:16:19 -0400
+Processing by TownsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NYw8yMw+9+PFMa7XmBF2CJeJ4vitgp5THxDPUuDAiivi8578/u8jcvWYroAtLA8V6YDtigAiTKKkKOmeD/UOnA==", "town"=>{"name"=>"Lens", "zipcode"=>"56520"}, "commit"=>"Create Town"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "towns" ("name", "zipcode", "latitude", "longitude", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Lens"], ["zipcode", 56520], ["latitude", 50.4291723], ["longitude", 2.8319805], ["created_at", "2018-03-17 10:16:19.593989"], ["updated_at", "2018-03-17 10:16:19.593989"]]
+  [1m[36m (27.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://port-3000.projet-corentindieval667230.codeanyapp.com/towns/3
+Completed 302 Found in 248ms (ActiveRecord: 28.3ms)
+
+
+Started GET "/towns/3" for 193.48.242.161 at 2018-03-17 06:16:19 -0400
+Processing by TownsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mTown Load (0.3ms)[0m  SELECT  "towns".* FROM "towns" WHERE "towns"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered towns/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 112ms (Views: 103.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:20 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:20 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:20 -0400
+
+
+Started GET "/assets/students.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:20 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:20 -0400
+
+
+Started GET "/assets/towns.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:20 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:20 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:20 -0400
+
+
+Started GET "/assets/students.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:20 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:20 -0400
+
+
+Started GET "/assets/towns.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:20 -0400
+
+
+Started GET "/assets/application.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:20 -0400
+
+
+Started GET "/towns" for 193.48.242.161 at 2018-03-17 06:16:24 -0400
+Processing by TownsController#index as HTML
+  [1m[36mTown Load (0.2ms)[0m  [1mSELECT "towns".* FROM "towns"[0m
+  Rendered towns/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 95ms (Views: 94.3ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/towns/3" for 193.48.242.161 at 2018-03-17 06:16:27 -0400
+Processing by TownsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GMLOcTANsfEO05B2A5+kAc+Vz7EXnRqH+OrXlygFT/HPvWxFAtxlYD56kCG2ot0csZzAw7o9yHZD0vFbxzDLRg==", "id"=>"3"}
+  [1m[35mTown Load (0.1ms)[0m  SELECT  "towns".* FROM "towns" WHERE "towns"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "towns" WHERE "towns"."id" = ?  [["id", 3]]
+  [1m[36m (28.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://port-3000.projet-corentindieval667230.codeanyapp.com/towns
+Completed 302 Found in 33ms (ActiveRecord: 28.6ms)
+
+
+Started GET "/towns" for 193.48.242.161 at 2018-03-17 06:16:28 -0400
+Processing by TownsController#index as HTML
+  [1m[35mTown Load (0.3ms)[0m  SELECT "towns".* FROM "towns"
+  Rendered towns/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 89ms (Views: 87.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:28 -0400
+
+
+Started GET "/assets/application.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:28 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:28 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:28 -0400
+
+
+Started GET "/assets/towns.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:28 -0400
+
+
+Started GET "/assets/students.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:28 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:28 -0400
+
+
+Started GET "/assets/students.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:28 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:28 -0400
+
+
+Started GET "/assets/towns.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:28 -0400
+
+
+Started DELETE "/towns/2" for 193.48.242.161 at 2018-03-17 06:16:32 -0400
+Processing by TownsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ImbTHlNUaoLLjAjsZEBR+FvF2zCbNG6v+SR+sO7Zl4D1GXEqYYW+E/slCLvRfSjlJczUQjaUvF5CHFh8AewTNw==", "id"=>"2"}
+  [1m[36mTown Load (0.2ms)[0m  [1mSELECT  "towns".* FROM "towns" WHERE "towns"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "towns" WHERE "towns"."id" = ?[0m  [["id", 2]]
+  [1m[35m (28.9ms)[0m  commit transaction
+Redirected to http://port-3000.projet-corentindieval667230.codeanyapp.com/towns
+Completed 302 Found in 34ms (ActiveRecord: 29.3ms)
+
+
+Started GET "/towns" for 193.48.242.161 at 2018-03-17 06:16:32 -0400
+Processing by TownsController#index as HTML
+  [1m[36mTown Load (0.3ms)[0m  [1mSELECT "towns".* FROM "towns"[0m
+  Rendered towns/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 87ms (Views: 85.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:33 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:33 -0400
+
+
+Started GET "/assets/towns.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:33 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:33 -0400
+
+
+Started GET "/assets/students.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:33 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:33 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:33 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:33 -0400
+
+
+Started GET "/assets/students.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:33 -0400
+
+
+Started GET "/assets/towns.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:33 -0400
+
+
+Started GET "/assets/application.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:33 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:33 -0400
+
+
+Started DELETE "/towns/1" for 193.48.242.161 at 2018-03-17 06:16:35 -0400
+Processing by TownsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gfyoda6Y4WDpdDHtvJ7BmK68V6dteloZkN5+W6XHksJWgwpBnEk18dndMboJo7iF0LVY1cDaiOgr5liXSvIWdQ==", "id"=>"1"}
+  [1m[35mTown Load (0.1ms)[0m  SELECT  "towns".* FROM "towns" WHERE "towns"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "towns" WHERE "towns"."id" = ?  [["id", 1]]
+  [1m[36m (32.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://port-3000.projet-corentindieval667230.codeanyapp.com/towns
+Completed 302 Found in 37ms (ActiveRecord: 33.4ms)
+
+
+Started GET "/towns" for 193.48.242.161 at 2018-03-17 06:16:36 -0400
+Processing by TownsController#index as HTML
+  [1m[35mTown Load (0.2ms)[0m  SELECT "towns".* FROM "towns"
+  Rendered towns/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 89ms (Views: 87.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/students.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:36 -0400
+
+
+Started GET "/assets/application.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:36 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:36 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:36 -0400
+
+
+Started GET "/assets/towns.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:36 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:36 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:36 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:36 -0400
+
+
+Started GET "/assets/students.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:36 -0400
+
+
+Started GET "/assets/towns.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:36 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:36 -0400
+
+
+Started GET "/assets/application.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:37 -0400
+
+
+Started GET "/towns/new" for 193.48.242.161 at 2018-03-17 06:16:40 -0400
+Processing by TownsController#new as HTML
+  Rendered towns/_form.html.erb (2.4ms)
+  Rendered towns/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 91ms (Views: 90.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/towns" for 193.48.242.161 at 2018-03-17 06:16:45 -0400
+Processing by TownsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZWTk/rp+jzvI2V81PMZARWH6WnmOeNMvishjwNOF5m6yG0bKiK9bqvhwX2KJ+zlYH/NVCyPYAd4x8EUMPLBi2Q==", "town"=>{"name"=>"Arras", "zipcode"=>"62000"}, "commit"=>"Create Town"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "towns" ("name", "zipcode", "latitude", "longitude", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Arras"], ["zipcode", 62000], ["latitude", 50.291048], ["longitude", 2.7772211], ["created_at", "2018-03-17 10:16:45.457267"], ["updated_at", "2018-03-17 10:16:45.457267"]]
+  [1m[36m (30.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://port-3000.projet-corentindieval667230.codeanyapp.com/towns/4
+Completed 302 Found in 245ms (ActiveRecord: 30.8ms)
+
+
+Started GET "/towns/4" for 193.48.242.161 at 2018-03-17 06:16:45 -0400
+Processing by TownsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mTown Load (0.2ms)[0m  SELECT  "towns".* FROM "towns" WHERE "towns"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered towns/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 81ms (Views: 80.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:46 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:46 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:46 -0400
+
+
+Started GET "/assets/towns.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:46 -0400
+
+
+Started GET "/assets/students.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:46 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 193.48.242.161 at 2018-03-17 06:16:46 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:46 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:46 -0400
+
+
+Started GET "/assets/students.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:46 -0400
+
+
+Started GET "/assets/towns.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:46 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:46 -0400
+
+
+Started GET "/assets/application.js?body=1" for 193.48.242.161 at 2018-03-17 06:16:46 -0400
