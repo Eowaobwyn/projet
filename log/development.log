@@ -2966,3 +2966,219 @@ ActionView::Template::Error (uninitialized constant ForecastIO::Forecast):
   Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
   Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
   Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.2ms)
+
+
+Started PATCH "/towns/6" for 62.39.209.27 at 2018-03-22 15:37:20 -0400
+Processing by TownsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KubxdPcq1kDCCi8iBe5T+JNlXsEqjK2sS15VEZXDUgbSUar3nH6qreFOaqpFi03K2OHABKnk3esvfybzdTgrng==", "town"=>{"name"=>"Exincourt", "zipcode"=>"25400"}, "commit"=>"Update Town", "id"=>"6"}
+  [1m[36mTown Load (0.2ms)[0m  [1mSELECT  "towns".* FROM "towns" WHERE "towns"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://projet-corentindieval667230.codeanyapp.com:3000/towns/6
+Completed 302 Found in 505ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/towns/6" for 62.39.209.27 at 2018-03-22 15:37:21 -0400
+Processing by TownsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mTown Load (0.2ms)[0m  SELECT  "towns".* FROM "towns" WHERE "towns"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered towns/show.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (wrong number of arguments (1 for 2..3)):
+    22: 
+    23: <p>
+    24:   <strong>Weather:</strong>
+    25:   <%= @town.get_weather.summary %>
+    26: </p>
+    27: 
+    28: <p>
+  app/models/town.rb:6:in `get_weather'
+  app/views/towns/show.html.erb:25:in `_app_views_towns_show_html_erb__4017750006419144884_38984820'
+
+
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.4ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.1ms)
+
+
+Started GET "/towns/6" for 62.39.209.27 at 2018-03-22 15:37:31 -0400
+Processing by TownsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mTown Load (0.2ms)[0m  [1mSELECT  "towns".* FROM "towns" WHERE "towns"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered towns/show.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (wrong number of arguments (1 for 2..3)):
+    22: 
+    23: <p>
+    24:   <strong>Weather:</strong>
+    25:   <%= @town.get_weather.summary %>
+    26: </p>
+    27: 
+    28: <p>
+  app/models/town.rb:6:in `get_weather'
+  app/views/towns/show.html.erb:25:in `_app_views_towns_show_html_erb__4017750006419144884_38984820'
+
+
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.0ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.6ms)
+
+
+Started GET "/towns/6" for 62.39.209.27 at 2018-03-22 15:37:45 -0400
+Processing by TownsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mTown Load (0.2ms)[0m  SELECT  "towns".* FROM "towns" WHERE "towns"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered towns/show.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (wrong number of arguments (1 for 2..3)):
+    22: 
+    23: <p>
+    24:   <strong>Weather:</strong>
+    25:   <%= @town.get_weather.summary %>
+    26: </p>
+    27: 
+    28: <p>
+  app/models/town.rb:6:in `get_weather'
+  app/views/towns/show.html.erb:25:in `_app_views_towns_show_html_erb__4017750006419144884_38984820'
+
+
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.0ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-22 15:46:23 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as */*
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 150ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `date' for #<#<Class:0x00000003d90528>:0x00000003d78c20>):
+    1: <!DOCTYPE html>
+    2: <html>
+    3: <head>
+    4:   <title><%= date %></title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+  app/views/layouts/application.html.erb:4:in `_app_views_layouts_application_html_erb__260966552386657114_31795580'
+
+
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-22 15:46:23 -0400
+Processing by WelcomeController#index as */*
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 154ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `date' for #<#<Class:0x00000003d90528>:0x007f5c30017500>):
+    1: <!DOCTYPE html>
+    2: <html>
+    3: <head>
+    4:   <title><%= date %></title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+  app/views/layouts/application.html.erb:4:in `_app_views_layouts_application_html_erb__260966552386657114_31795580'
+
+
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-22 15:46:24 -0400
+Processing by WelcomeController#index as */*
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 103ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `date' for #<#<Class:0x00000003d90528>:0x007f5c2ce87f80>):
+    1: <!DOCTYPE html>
+    2: <html>
+    3: <head>
+    4:   <title><%= date %></title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+  app/views/layouts/application.html.erb:4:in `_app_views_layouts_application_html_erb__260966552386657114_31795580'
+
+
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.7ms)
+
+
+Started GET "/" for 62.39.209.27 at 2018-03-22 15:46:24 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 132ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `date' for #<#<Class:0x00000003d90528>:0x007f5c2ce10818>):
+    1: <!DOCTYPE html>
+    2: <html>
+    3: <head>
+    4:   <title><%= date %></title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+  app/views/layouts/application.html.erb:4:in `_app_views_layouts_application_html_erb__260966552386657114_31795580'
+
+
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.9ms)
+
+
+Started GET "/" for 62.39.209.27 at 2018-03-22 15:47:21 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 193ms (Views: 191.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 62.39.209.27 at 2018-03-22 15:47:21 -0400
+
+
+Started GET "/assets/students.css?body=1" for 62.39.209.27 at 2018-03-22 15:47:21 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 62.39.209.27 at 2018-03-22 15:47:21 -0400
+
+
+Started GET "/assets/towns.css?body=1" for 62.39.209.27 at 2018-03-22 15:47:21 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 62.39.209.27 at 2018-03-22 15:47:21 -0400
+
+
+Started GET "/assets/application.css?body=1" for 62.39.209.27 at 2018-03-22 15:47:21 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 62.39.209.27 at 2018-03-22 15:47:21 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 62.39.209.27 at 2018-03-22 15:47:21 -0400
+
+
+Started GET "/assets/students.js?body=1" for 62.39.209.27 at 2018-03-22 15:47:21 -0400
+
+
+Started GET "/assets/towns.js?body=1" for 62.39.209.27 at 2018-03-22 15:47:21 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 62.39.209.27 at 2018-03-22 15:47:21 -0400
+
+
+Started GET "/assets/application.js?body=1" for 62.39.209.27 at 2018-03-22 15:47:21 -0400

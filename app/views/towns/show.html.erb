@@ -22,12 +22,12 @@
 
 <p>
   <strong>Weather:</strong>
-  <%= @town.get_weather.summary %>
+  <%= @town.weather.summary %>
 </p>
 
 <p>
   <strong>Temperature:</strong>
-  <%= @town.get_weather.temperature %>
+  <%= @town.weather.temperature %>
 </p>
 
 <%= link_to 'Edit', edit_town_path(@town) %> |
