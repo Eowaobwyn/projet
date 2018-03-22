@@ -28,6 +28,8 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
+#Gem loofah
+gem 'loofah', '~> 2.2.1'
 
 group :production do
   gem 'pg', '~> 0.18'
