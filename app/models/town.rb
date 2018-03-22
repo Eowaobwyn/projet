@@ -5,10 +5,10 @@ class Town < ActiveRecord::Base
   
  private  
   def set_geocode 
-    towns = Nominatim.search.city(self.name).limit(1)
+    towns = Nominatim.search.city(self.name).limit(1).address_details(true)
     if towns && towns.first
       current_town = towns.first
-      #self.zipcode = current_town.zipcode
+      self.zipcode = current_town.address.postcode
       self.latitude = current_town.lat
       self.longitude = current_town.lon
     end
