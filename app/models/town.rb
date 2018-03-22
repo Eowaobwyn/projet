@@ -3,7 +3,7 @@ class Town < ActiveRecord::Base
   validates :name, :latitude, :longitude, presence: true
 
  def get_weather
-  ForecastIO::Forecast.new.coordinates(latitude: self.latitude, longitude: self.longitude).currently
+  ForecastIO.forecast(latitude: self.latitude, longitude: self.longitude).currently
  end
  
  private  
