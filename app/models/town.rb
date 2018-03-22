@@ -3,7 +3,7 @@ class Town < ActiveRecord::Base
   validates :name, :latitude, :longitude, presence: true
 
  def weather
-   ForecastIO.forecast(latitude: self.latitude, longitude: self.longitude, params: {units:'si'}).currently
+   ForecastIO.forecast(self.latitude, self.longitude, params: {units:'si'}).currently
  end
  
  private  
