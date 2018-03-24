@@ -4835,3 +4835,459 @@ Started GET "/assets/welcome.js?body=1" for 193.48.242.52 at 2018-03-24 05:20:08
 
 
 Started GET "/assets/application.js?body=1" for 193.48.242.52 at 2018-03-24 05:20:08 -0400
+
+
+Started GET "/towns" for 193.48.242.52 at 2018-03-24 05:34:48 -0400
+Processing by TownsController#index as HTML
+  [1m[35mTown Load (0.2ms)[0m  SELECT "towns".* FROM "towns"
+  Rendered towns/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 83ms (Views: 81.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/students.css?body=1" for 193.48.242.52 at 2018-03-24 05:34:48 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 193.48.242.52 at 2018-03-24 05:34:48 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 193.48.242.52 at 2018-03-24 05:34:48 -0400
+
+
+Started GET "/assets/towns.css?body=1" for 193.48.242.52 at 2018-03-24 05:34:48 -0400
+
+
+Started GET "/assets/application.css?body=1" for 193.48.242.52 at 2018-03-24 05:34:48 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 193.48.242.52 at 2018-03-24 05:34:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 193.48.242.52 at 2018-03-24 05:34:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 193.48.242.52 at 2018-03-24 05:34:48 -0400
+
+
+Started GET "/assets/students.js?body=1" for 193.48.242.52 at 2018-03-24 05:34:48 -0400
+
+
+Started GET "/assets/towns.js?body=1" for 193.48.242.52 at 2018-03-24 05:34:48 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 193.48.242.52 at 2018-03-24 05:34:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 193.48.242.52 at 2018-03-24 05:34:48 -0400
+
+
+Started GET "/towns" for 193.48.242.52 at 2018-03-24 05:34:50 -0400
+Processing by TownsController#index as HTML
+  [1m[36mTown Load (0.2ms)[0m  [1mSELECT "towns".* FROM "towns"[0m
+  Rendered towns/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 86ms (Views: 84.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 193.48.242.52 at 2018-03-24 05:34:50 -0400
+
+
+Started GET "/assets/towns.css?body=1" for 193.48.242.52 at 2018-03-24 05:34:50 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 193.48.242.52 at 2018-03-24 05:34:50 -0400
+
+
+Started GET "/assets/students.css?body=1" for 193.48.242.52 at 2018-03-24 05:34:50 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 193.48.242.52 at 2018-03-24 05:34:50 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 193.48.242.52 at 2018-03-24 05:34:50 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 193.48.242.52 at 2018-03-24 05:34:50 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 193.48.242.52 at 2018-03-24 05:34:50 -0400
+
+
+Started GET "/assets/students.js?body=1" for 193.48.242.52 at 2018-03-24 05:34:50 -0400
+
+
+Started GET "/assets/application.js?body=1" for 193.48.242.52 at 2018-03-24 05:34:50 -0400
+
+
+Started GET "/assets/towns.js?body=1" for 193.48.242.52 at 2018-03-24 05:34:50 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 193.48.242.52 at 2018-03-24 05:34:50 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: You did not specify a value for the configuration option `active_support.test_order`. In Rails 5, the default value of this option will change from `:sorted` to `:random`.
+To disable this warning and keep the current behavior, you can add the following line to your `config/environments/test.rb`:
+
+  Rails.application.configure do
+    config.active_support.test_order = :sorted
+  end
+
+Alternatively, you can opt into the future behavior by setting this option to `:random`. (called from test_order at /home/cabox/.rvm/gems/ruby-2.1.2/gems/activesupport-4.2.10/lib/active_support/test_case.rb:42)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.5ms)[0m  [1mDELETE FROM "students"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "students" ("name", "lastname", "birthday", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2018-03-10', '2018-03-24 09:36:20', '2018-03-24 09:36:20', 980190962)
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "students" ("name", "lastname", "birthday", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2018-03-10', '2018-03-24 09:36:20', '2018-03-24 09:36:20', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "towns"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "towns" ("name", "zipcode", "latitude", "longitude", "created_at", "updated_at", "id") VALUES ('MyString', 1, 9.99, 9.99, '2018-03-24 09:36:20', '2018-03-24 09:36:20', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "towns" ("name", "zipcode", "latitude", "longitude", "created_at", "updated_at", "id") VALUES ('MyString', 1, 9.99, 9.99, '2018-03-24 09:36:20', '2018-03-24 09:36:20', 298486374)
+  [1m[36m (24.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+--------------------------------------------------
+StudentsControllerTest: test_should_create_student
+--------------------------------------------------
+  [1m[36mStudent Load (0.3ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "students"
+Processing by StudentsController#create as HTML
+  Parameters: {"student"=>{"birthday"=>"2018-03-10", "lastname"=>"MyString", "name"=>"MyString"}}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------------
+StudentsControllerTest: test_should_destroy_student
+---------------------------------------------------
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "students"
+Processing by StudentsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+--------------------------------------------
+StudentsControllerTest: test_should_get_edit
+--------------------------------------------
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mStudent Load (1.4ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 980190962]]
+  Rendered students/_form.html.erb (54.3ms)
+  Rendered students/edit.html.erb within layouts/application (69.6ms)
+Completed 200 OK in 251ms (Views: 232.2ms | ActiveRecord: 1.4ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------
+StudentsControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 120ms (Views: 119.9ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------
+StudentsControllerTest: test_should_get_new
+-------------------------------------------
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StudentsController#new as HTML
+  Rendered students/_form.html.erb (6.5ms)
+  Rendered students/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 86ms (Views: 85.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------------
+StudentsControllerTest: test_should_show_student
+------------------------------------------------
+  [1m[35mStudent Load (0.2ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Rendered students/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 84ms (Views: 83.4ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------
+StudentsControllerTest: test_should_update_student
+--------------------------------------------------
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StudentsController#update as HTML
+  Parameters: {"student"=>{"birthday"=>"2018-03-10", "lastname"=>"MyString", "name"=>"MyString"}, "id"=>"980190962"}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------
+WelcomeControllerTest: test_should_get_index
+--------------------------------------------
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 92ms (Views: 91.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------------
+TownTest: test_Town_does_not_exist_is_not_valid
+-----------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------
+TownTest: test_town_validation_does_geocoding
+---------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------
+TownsControllerTest: test_should_create_town
+--------------------------------------------
+  [1m[36mTown Load (0.3ms)[0m  [1mSELECT  "towns".* FROM "towns" WHERE "towns"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "towns"
+Processing by TownsController#create as HTML
+  Parameters: {"town"=>{"latitude"=>"9.99", "longitude"=>"9.99", "name"=>"MyString", "zipcode"=>"1"}}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------
+TownsControllerTest: test_should_destroy_town
+---------------------------------------------
+  [1m[36mTown Load (0.1ms)[0m  [1mSELECT  "towns".* FROM "towns" WHERE "towns"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "towns"
+Processing by TownsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------
+TownsControllerTest: test_should_get_edit
+-----------------------------------------
+  [1m[36mTown Load (0.1ms)[0m  [1mSELECT  "towns".* FROM "towns" WHERE "towns"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by TownsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mTown Load (0.1ms)[0m  SELECT  "towns".* FROM "towns" WHERE "towns"."id" = ? LIMIT 1  [["id", 980190962]]
+  Rendered towns/_form.html.erb (5.0ms)
+  Rendered towns/edit.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 95ms (Views: 94.0ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------
+TownsControllerTest: test_should_get_index
+------------------------------------------
+  [1m[36mTown Load (0.1ms)[0m  [1mSELECT  "towns".* FROM "towns" WHERE "towns"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by TownsController#index as HTML
+  [1m[35mTown Load (0.2ms)[0m  SELECT "towns".* FROM "towns"
+  Rendered towns/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 114ms (Views: 113.2ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------
+TownsControllerTest: test_should_get_new
+----------------------------------------
+  [1m[36mTown Load (0.1ms)[0m  [1mSELECT  "towns".* FROM "towns" WHERE "towns"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by TownsController#new as HTML
+  Rendered towns/_form.html.erb (2.7ms)
+  Rendered towns/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 96ms (Views: 95.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------
+TownsControllerTest: test_should_show_town
+------------------------------------------
+  [1m[35mTown Load (0.1ms)[0m  SELECT  "towns".* FROM "towns" WHERE "towns"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by TownsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mTown Load (0.1ms)[0m  [1mSELECT  "towns".* FROM "towns" WHERE "towns"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Rendered towns/show.html.erb within layouts/application (859.1ms)
+Completed 200 OK in 957ms (Views: 956.3ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+TownsControllerTest: test_should_update_town
+--------------------------------------------
+  [1m[35mTown Load (0.2ms)[0m  SELECT  "towns".* FROM "towns" WHERE "towns"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by TownsController#update as HTML
+  Parameters: {"town"=>{"latitude"=>"9.99", "longitude"=>"9.99", "name"=>"MyString", "zipcode"=>"1"}, "id"=>"980190962"}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: You did not specify a value for the configuration option `active_support.test_order`. In Rails 5, the default value of this option will change from `:sorted` to `:random`.
+To disable this warning and keep the current behavior, you can add the following line to your `config/environments/test.rb`:
+
+  Rails.application.configure do
+    config.active_support.test_order = :sorted
+  end
+
+Alternatively, you can opt into the future behavior by setting this option to `:random`. (called from test_order at /home/cabox/.rvm/gems/ruby-2.1.2/gems/activesupport-4.2.10/lib/active_support/test_case.rb:42)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "students"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "students" ("name", "lastname", "birthday", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2018-03-10', '2018-03-24 09:50:11', '2018-03-24 09:50:11', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "students" ("name", "lastname", "birthday", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2018-03-10', '2018-03-24 09:50:11', '2018-03-24 09:50:11', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "towns"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "towns" ("name", "zipcode", "latitude", "longitude", "created_at", "updated_at", "id") VALUES ('MyString', 1, 9.99, 9.99, '2018-03-24 09:50:11', '2018-03-24 09:50:11', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "towns" ("name", "zipcode", "latitude", "longitude", "created_at", "updated_at", "id") VALUES ('MyString', 1, 9.99, 9.99, '2018-03-24 09:50:11', '2018-03-24 09:50:11', 298486374)
+  [1m[36m (28.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------------
+StudentsControllerTest: test_should_create_student
+--------------------------------------------------
+  [1m[36mStudent Load (0.3ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "students"
+Processing by StudentsController#create as HTML
+  Parameters: {"student"=>{"birthday"=>"2018-03-10", "lastname"=>"MyString", "name"=>"MyString"}}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------------
+StudentsControllerTest: test_should_destroy_student
+---------------------------------------------------
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "students"
+Processing by StudentsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------
+StudentsControllerTest: test_should_get_edit
+--------------------------------------------
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 980190962]]
+  Rendered students/_form.html.erb (24.4ms)
+  Rendered students/edit.html.erb within layouts/application (29.6ms)
+Completed 200 OK in 170ms (Views: 167.2ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------
+StudentsControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 121ms (Views: 120.6ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------
+StudentsControllerTest: test_should_get_new
+-------------------------------------------
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StudentsController#new as HTML
+  Rendered students/_form.html.erb (6.4ms)
+  Rendered students/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 89ms (Views: 88.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------------
+StudentsControllerTest: test_should_show_student
+------------------------------------------------
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Rendered students/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 93ms (Views: 92.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------
+StudentsControllerTest: test_should_update_student
+--------------------------------------------------
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StudentsController#update as HTML
+  Parameters: {"student"=>{"birthday"=>"2018-03-10", "lastname"=>"MyString", "name"=>"MyString"}, "id"=>"980190962"}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------
+WelcomeControllerTest: test_should_get_index
+--------------------------------------------
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 82ms (Views: 82.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------
+TownsControllerTest: test_should_create_town
+--------------------------------------------
+  [1m[36mTown Load (0.3ms)[0m  [1mSELECT  "towns".* FROM "towns" WHERE "towns"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "towns"
+Processing by TownsController#create as HTML
+  Parameters: {"town"=>{"latitude"=>"9.99", "longitude"=>"9.99", "name"=>"MyString", "zipcode"=>"1"}}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------
+TownsControllerTest: test_should_destroy_town
+---------------------------------------------
+  [1m[36mTown Load (0.1ms)[0m  [1mSELECT  "towns".* FROM "towns" WHERE "towns"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "towns"
+Processing by TownsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------
+TownsControllerTest: test_should_get_edit
+-----------------------------------------
+  [1m[36mTown Load (0.1ms)[0m  [1mSELECT  "towns".* FROM "towns" WHERE "towns"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by TownsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mTown Load (0.1ms)[0m  SELECT  "towns".* FROM "towns" WHERE "towns"."id" = ? LIMIT 1  [["id", 980190962]]
+  Rendered towns/_form.html.erb (5.5ms)
+  Rendered towns/edit.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 90ms (Views: 89.2ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------
+TownsControllerTest: test_should_get_index
+------------------------------------------
+  [1m[36mTown Load (0.1ms)[0m  [1mSELECT  "towns".* FROM "towns" WHERE "towns"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by TownsController#index as HTML
+  [1m[35mTown Load (0.2ms)[0m  SELECT "towns".* FROM "towns"
+  Rendered towns/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 93ms (Views: 92.5ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------
+TownsControllerTest: test_should_get_new
+----------------------------------------
+  [1m[36mTown Load (0.1ms)[0m  [1mSELECT  "towns".* FROM "towns" WHERE "towns"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by TownsController#new as HTML
+  Rendered towns/_form.html.erb (3.0ms)
+  Rendered towns/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 85ms (Views: 84.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+------------------------------------------
+TownsControllerTest: test_should_show_town
+------------------------------------------
+  [1m[35mTown Load (0.1ms)[0m  SELECT  "towns".* FROM "towns" WHERE "towns"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by TownsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mTown Load (0.1ms)[0m  [1mSELECT  "towns".* FROM "towns" WHERE "towns"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Rendered towns/show.html.erb within layouts/application (880.6ms)
+Completed 200 OK in 978ms (Views: 976.9ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+TownsControllerTest: test_should_update_town
+--------------------------------------------
+  [1m[35mTown Load (0.1ms)[0m  SELECT  "towns".* FROM "towns" WHERE "towns"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by TownsController#update as HTML
+  Parameters: {"town"=>{"latitude"=>"9.99", "longitude"=>"9.99", "name"=>"MyString", "zipcode"=>"1"}, "id"=>"980190962"}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------------
+TownTest: test_Town_does_not_exist_is_not_valid
+-----------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------
+TownTest: test_town_validation_does_geocoding
+---------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
