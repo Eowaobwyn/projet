@@ -32,7 +32,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'loofah', '~> 2.2.1'
 
 group :production do
-  gem 'pg', '~> 0.18'
+  gem 'pg', '~> 0.21.0'
 end
 
 group :development, :test do
