@@ -20,7 +20,7 @@ gem 'forecast_io'
 gem 'nominatim', '~> 0.0.6'
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 4.1', '>= 4.1.1'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -30,6 +30,9 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 #Gem loofah
 gem 'loofah', '~> 2.2.1'
+
+#Gem 12facteurs
+gem 'rails_12factor', group: :production
 
 group :production do
   gem 'pg', '~> 0.21.0'
